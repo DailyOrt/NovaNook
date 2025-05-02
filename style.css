@@ -1,0 +1,278 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111;
+    color: #fff;
+}
+
+/* Barra superior */
+.top-bar {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Sección de inicio */
+.content-section {
+    background: linear-gradient(to bottom, #000000, #6b6b6b);
+    text-align: center;
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+button {
+    background-color: #555;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+.modelos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.modelos img {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.producto {
+    transition: transform 0.3s ease-in-out;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+/* Secciones ocultas */
+.hidden {
+    display: none;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #000;
+    margin-top: 30px;
+}
+
+/*Ofertas*/
+#ofertas {
+    background: linear-gradient(to bottom, #000000, #6b6b6b);
+    transition: transform 0.3s ease-in-out;
+}
+
+#ofertas .producto:hover {
+    transform: scale(1.05);
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.producto {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgb(29, 29, 29);
+    text-align: center;
+    color: #000000e5;
+    width: 250px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.producto img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.descuento {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: red;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.precio {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(37, 37, 37);
+    margin: 10px 0;
+}
+
+.precio-antiguo {
+    text-decoration: line-through;
+    color: rgb(37, 37, 37);
+    font-size: 16px;
+}
+
+.rating {
+    color: #fddc1f;
+    font-size: 14px;
+}
+
+.agregar-carrito {
+    background-color: rgba(33, 33, 248, 0.911);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+ /* Sección NUEVO */
+#nuevo {
+    background: linear-gradient(to bottom, #000000, #757575);
+    padding: 20px;
+    text-align: center;
+}
+
+#nuevo h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e2e2e2;
+    margin-bottom: 20px;
+}
+
+#nuevo .productos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+#nuevo .producto {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgb(29, 29, 29);
+    text-align: center;
+    width: 250px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+#nuevo .producto:hover {
+    transform: scale(1.05);
+}
+
+#nuevo .producto img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#nuevo .precio {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+    margin: 10px 0;
+}
+
+#nuevo .precio-antiguo {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 16px;
+}
+
+#nuevo .rating {
+    color: #FFD700;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#nuevo .agregar-carrito {
+    background-color: rgba(33, 33, 248, 0.911);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+#nuevo .agregar-carrito:hover {
+    background-color: #757575;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.footer p {
+    color: #e2e2e2;
+    margin: 10px 0;
+}
+
+.footer a {
+    color: #7bb9ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    color: #7bb9ff;
+    text-decoration: underline;
+}
